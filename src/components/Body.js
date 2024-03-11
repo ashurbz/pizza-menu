@@ -1,5 +1,6 @@
 import React from "react";
 import PizzaCard from "./PizzaCard";
+import Footer from "./Footer";
 import { pizzaData } from "../data";
 
 const Body = () => {
@@ -23,6 +24,9 @@ const Body = () => {
       </div>
       <div>
         <PizzaCard data={pizzaData} />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

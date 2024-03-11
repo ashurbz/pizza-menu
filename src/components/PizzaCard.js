@@ -1,13 +1,12 @@
 import React from "react";
 
 const PizzaCard = ({ data }) => {
-  console.log(data);
-
   return (
     <div className="flex">
       {data.map((item) => {
         return (
           <div
+            key={item.name}
             className={` ${
               item.soldOut ? "bg-red-500" : ""
             } border border-stone-800 w-1/3 p-5 m-2 justify-between`}
